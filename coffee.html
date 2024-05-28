@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- 파비콘 -->
+    <link rel="shortcut icon" href="./favicon.ico" type="image/x-icon">
+    
+    <title>hollys</title>
+
+    <!-- reset -->
+    <link rel="stylesheet" href="./reset.css">
+
+    <!-- plugin -->
+
+    <script src="./js/jquery.js"></script>
+
+    <style>
+        #menu .container{
+            padding: 50px 0;
+            display: grid;
+            grid-template-columns: 1fr 3fr;
+            column-gap: 40px;
+        }
+        #menu h2{
+            display: none;
+        }
+        #menu .local-nav{
+            display: grid;
+            row-gap: 30px;
+        }
+        #menu .local-nav h3{
+            display: none;
+        }
+        #menu .local-nav ul{
+            margin-bottom: 40px;
+            font-weight: 700;
+            font-size: 2em;
+        }
+        #menu .local-nav li.active,
+        #menu .local-nav li:hover{
+            color: #d91226;
+        }
+        #menu .local-nav h4{
+            font-weight: 600;
+            font-size: 1.1em;
+        }
+        #menu .local-nav h4+p{
+            margin-bottom: 10px;
+            font-weight: 300;
+            font-size: 0.9em;
+            line-height: 1;
+        }
+        #menu .local-nav .img-box{
+            border-bottom: 1px solid var(--text04);
+            padding-bottom: 20px;
+        }
+        #menu .local-contents h4{
+            font-weight: 700;
+            font-size: 2.6em;
+        }
+
+
+    </style>
+</head>
+<body>
+    <section id="wrap">
+        <header id="header">
+            <div class="container">
+                <h1><a href="./index.html">HOLLYS</a></h1>
+                <div class="q-nav01">
+                    <ul>
+                        <li>
+                            <a href="#">
+                                <img src="./images/icon01.svg" alt="창업설명회 아이콘">
+                                창업설명회
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <img src="./images/icon02.svg" alt="기업특판">
+                                기업특판
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="q-nav02">
+                    <ul>
+                        <li><a href="#">멤버십 로그인</a></li>
+                        <li><a href="#">멤버십 가입</a></li>
+                        <li><a href="#">고객센터</a></li>
+                        <li><a href="#">english</a></li>
+                    </ul>
+                </div>
+                <nav class="main-nav" id="main-nav">
+                    <ul>
+                        <li>
+                            <a href="#">
+                                <span>menu</span>
+                                <span>메뉴</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <span>HOLLY mall</span>
+                                <span>할리스몰</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <span>membership</span>
+                                <span>멤버십</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <span>hollys news</span>
+                                <span>할리스 뉴스</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <span>event</span>
+                                <span>이벤트 및 공지</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <span>store</span>
+                                <span>매장</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <span>hollys is</span>
+                                <span>할리스 소개</span>
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+                <div class="sub-nav" id="sub-nav">
+                    <ul>
+                        <li><a href="#">COFFEE</a></li>
+                        <li><a href="#">라떼 ⋅ 초콜릿 ⋅ 티</a></li>
+                        <li><a href="#">할리치노 ⋅ 빙수</a></li>
+                        <li><a href="#">스무디 ⋅ 주스</a></li>
+                        <li><a href="#">스파클링</a></li>
+                        <li><a href="#">푸드</a></li>
+                        <li><a href="#">MD상품</a></li>
+                        <li><a href="#">MD식품</a></li>
+                    </ul>
+                    <ul>
+                        <li><a href="#">할리스콘</a></li>
+                        <li><a href="#">할리스카드</a></li>
+                        <li><a href="#">E-Store</a></li>
+                        <li><a href="#">구매내역</a></li>
+                    </ul>
+                    <ul>
+                        <li><a href="#">스마트오더</a></li>
+                        <li><a href="#">멤버십 혜택</a></li>
+                    </ul>
+                    <ul>
+                        <li><a href="#">Notice</a></li>
+                        <li><a href="#">Event</a></li>
+                    </ul>
+                    <ul>
+                        <li><a href="#">매장검색</a></li>
+                    </ul>
+                    <ul>
+                        <li><a href="#">1</a></li>
+                        <li><a href="#">2</a></li>
+                        <li><a href="#">3</a></li>
+                        <li><a href="#">4</a></li>
+                        <li><a href="#">5</a></li>
+                    </ul>
+
+                </div>
+                <div class="pos-fixed">
+                    <a href="#"><img src="" alt="가맹문의"></a>
+                </div>
+            </div>
+        </header>
+        <section class="sec menu">
+            <div class="container">
+                <article class="art local-nav">
+                    <h3>로컬 네비게이션</h3>
+                    <ul>
+                        <li><a href="#">커피</a></li>
+                        <li><a href="#">라떼</a></li>
+                        <li><a href="#">할리치노</a></li>
+                        <li><a href="#">스무디</a></li>
+                        <li><a href="#">주스</a></li>
+                        <li><a href="#">스파클링</a></li>
+                        <li><a href="#">상품</a></li>
+                        <li><a href="#">식품</a></li>
+                    </ul>
+                    <h4><a href="#">membership</a></h4>
+                    <p>할리스멤버십 'CROWN'으로 다양한 혜택을 즐겨보세요</p>
+                    <div class="img-box"><a href="#"><img src="./images/imglocal" alt="로컬네비"></a></div>
+                </article>
+                <article class="art local-contents" id="local-contents">
+                    <h3>Home > menu > coffee</h3>
+                    <h4>COFFEE</h4>
+                    <div class="img-box"><img src="./images/img-coffee-01.png" alt="커피"></div>
+                </article>
+            </div>
+        </section>
+        <footer id="footer">
+            <div class="container">
+                <ul>
+                    <li><a href="#"><strong>개인정보처리방침</strong></a></li>
+                    <li><a href="#">서비스이용약관</a></li>
+                    <li><a href="#">멤버십이용약관</a></li>
+                    <li><a href="#">할리스카드이용약관</a></li>
+                    <li><a href="#">고객문의</a></li>
+                    <li><a href="#">고객상담</a></li>
+                    <li><a href="#">사이트맵</a></li>
+                    <li><a href="#">BI소개</a></li>
+                </ul>
+            </div>
+        </footer>
+    </section>
+
+
+    <script>
+        $('.local-nav li').click(function(){
+            let loadIdx = $()
+        })
+    </script>
+</body>
+</html>
